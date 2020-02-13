@@ -24,9 +24,11 @@ users.generatorToken = async function(info){
 };
 
 users.basicAuth = async function(user , pass){
-  if( await bcrypt.compare(pass , await Model.read(user)[0].password)) {
-    return await Model.read(user)[0];
-  } else {
+  let readDataBase = await Model.read(user);
+  let ifFound = await bcrypt.compare(pass , readDataBase[0].password);
+  if(ifFound){
+    return readDataBase[0];
+  }else{
     return Promise.reject ;
   }
 };
