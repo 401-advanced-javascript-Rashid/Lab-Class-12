@@ -9,7 +9,7 @@ Authentication technology provides access control for systems by checking to see
 
 ## Links and Resources
 
-- [submission PR]()
+- [submission PR](https://github.com/401-advanced-javascript-Rashid/Lab-Class-12/pull/1)
 
 ## Setup
 
@@ -37,3 +37,4 @@ Authentication technology provides access control for systems by checking to see
 - nodemon 
 
 ## UML 
+https://raw.githubusercontent.com/401-advanced-javascript-Rashid/Lab-Class-12/OAuth/assest/20200211_011523_001.jpg
